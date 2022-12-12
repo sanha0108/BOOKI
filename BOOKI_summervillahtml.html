@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOOKI</title>
+
+	<link rel="shortcut icon" href="icon/logo2.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		@font-face{
+			font-family: 'Queens Compressed Trial';
+			src: url(font/QueensCondensedTrial-Bold.ttf);
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		body {font-family:'Noto Sans KR', 'sans-serif';}
+
+		.CON_A .container{
+			width: 99vw;
+			height: 624px;
+			background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(image/추천도서.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.CON_A .header{
+			width: 99vw;
+			height: 88px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.CON_A .h_c{
+			width: 100vw;
+			height: 88px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.CON_A .logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 44px;
+			color: #EDE6D8;
+			margin-top: 10px;
+		}
+
+		.CON_A .logo:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .logo b{
+			color: #58B567;
+		}
+
+		.CON_A .logo b:hover{
+			color: #EDE6D8;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar{
+			width: 569px;
+			display: flex;
+			font-family: 'Song Myung', serif;
+			font-size: 22px;
+			justify-content: space-around;
+		}
+
+		.CON_A .navbar a{
+			color: #EDE6D8;
+		}
+
+		.CON_A .navbar a:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar b{
+			color: #58B567;
+			font-weight: 500;
+		}
+
+		.CON_A .login img{
+			width: 40px;
+			height: 40px;
+		}
+
+		.CON_A .login{
+			width: 40px;
+			height: 40px;
+			background: url(icon/login_g.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			transition: 0.3s;
+			opacity: 1;
+		}
+
+		.CON_A .login:hover .change{
+            transition: 0.15s ease-in;
+            opacity: 0;
+		}
+
+		.CON_A .title{
+			width: 80vw;
+			margin: auto;
+			color: #EDE6D8;
+			margin-top: 220px;
+		}
+
+		.CON_A .title_m{
+			font-family: 'Song Myung', serif;
+			font-size: 80px;
+		}
+
+		.CON_A .title_sub{
+			margin-top: 4px;
+			font-size: 18px;
+			letter-spacing: -1px;
+			font-weight: 400;
+		}
+
+		/*CON_B영역*/
+
+		.CON_B{
+			width: 99vw;
+			height: 72px;
+			background-color: #403529;
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+			z-index: 2;
+			position: relative;
+		}
+
+		.CON_B .container{
+			width: 80vw;
+			margin: auto;
+		}
+
+		.CON_B .nav_all{
+			display: flex;
+			line-height: 72px;
+		}
+
+		.CON_B .line{
+			font-size: 26px;
+			color: #EDE6D8;
+			font-weight: 300;
+		}
+
+		.CON_B .nav_con{
+			margin: 0px 16px 0px 16px;
+		}
+
+		.CON_B .nav_name{
+			font-size: 18px;
+			color: #EDE6D8;
+			font-weight: 300;
+			margin-right: 80px;
+		}
+
+		.CON_B .nav_icon{
+			color: #EDE6D8;
+			position: relative;
+			top: 4px;
+			font-weight: 300;
+		}
+
+		.CON_B a:hover{
+			color: #58B567;
+			transition: 0.1s ease-in;
+			font-weight: 500;
+		}
+
+/*		CON_C영역*/
+
+		.CON_C .container{
+			display: grid;
+			grid-template-columns: 24vw 50.9vw 24vw;
+			grid-template-rows: 98vh 62vh 23vh;
+			background-color: #403529;
+			gap: 1px;
+		}
+
+		.CON_C .item:nth-child(1){
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			background-color: #AC977F;
+		}
+
+		.CON_C .item:nth-child(1):hover{
+			background-color: #403529;
+			transition: 0.5s ease-in;
+		}
+
+		.CON_C .item:nth-child(2){
+			grid-row-start: 1;
+			grid-row-end: 2;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			background-color: #DED2B8;
+		}
+
+		.CON_C .item:nth-child(2):hover{
+			background-color: #C2B29F;
+			transition: 0.5s ease-in;
+		}
+
+		.CON_C .item:nth-child(3){
+			grid-row-start: 1;
+			grid-row-end: 3;
+			grid-column-start: 3;
+			grid-column-end: 3;
+			background-color: #AC977F;
+		}
+
+		.CON_C .item:nth-child(3):hover{
+			background-color: #403529;
+			transition: 0.5s ease-in;
+		}
+
+		.CON_C .item:nth-child(4){
+			grid-row-start: 2;
+			grid-row-end: 4;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			background-color: #DED2B8;
+		}
+
+		.CON_C .item:nth-child(4):hover{
+			background-color: #403529;
+			transition: 0.5s ease-in;
+		}
+
+		.CON_C .item:nth-child(5){
+			grid-row-start: 2;
+			grid-row-end: 3;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			background-color: #403529;
+		}
+
+		.CON_C .item:nth-child(5):hover{
+			background-color: #58B567;
+			transition: 0.5s ease-in;
+		}
+
+		.CON_C .item:nth-child(6){
+			grid-row-start: 3;
+			grid-row-end: 4;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			background-color: #C2B29F;
+		}
+
+		.CON_C .item:nth-child(6):hover{
+			background-color: #403529;
+			transition: 0.5s ease-in;
+		}
+
+		.CON_C .top_box{
+			width: 40vw;
+			height: 90vh;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.CON_C .rotateline{
+			width: 0.25vw;
+			height: 7vh;
+			transform: rotateZ(35deg);
+			margin: auto;
+			margin-top: 12vh;
+		}
+
+		.CON_C .book_title{
+			font-family: 'Song Myung', serif;
+			font-size: 2.7vw;
+			color: #403529;
+			margin-top: -1.5vh;
+		}
+
+		.CON_C .book_img{
+			width: 19vw;
+			margin: auto;
+		}
+
+		.CON_C .book_sub{
+			font-size: 1vw;
+			font-weight: 500;
+		}
+
+		.CON_C .bottom_box{
+			display: flex;
+			width: 44vw;
+			height: 60vh;
+			margin: auto;
+			align-items: center;
+		}
+
+		.CON_C .bottom_box p{
+			font-size: 1vw;
+			color: #EDE6D8;
+		}
+
+		footer .f_box{
+			width: 99vw;
+			display: flex;
+			flex-direction: column;
+		}
+
+		footer .f1_container{
+			width: 99vw;
+			height: 56px;
+			background-color: #AC977F;
+			line-height: 56px;
+		}
+
+		footer .f1{
+			font-size: 15px;
+			width: 480px;
+			display: flex;
+			justify-content: space-around;
+			margin: auto;
+		}
+
+		footer .f1 a{
+			color: #403529;
+		}
+
+		footer .f1 a:hover{
+			font-weight: 500;
+			transition: 0.3s ease-in;
+		}
+
+		footer .f1 p{
+			color: #EDE6D8;
+		}
+
+		footer .f2_container{
+			width: 99vw;
+			height: 132px;
+			background-color: #403529;
+		}
+
+		footer .f2{
+			width: 410px;
+			display: flex;
+			color: #EDE6D8;
+			margin: auto;
+			position: relative;
+			top: 68px;
+		}
+
+		footer .f2_logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 32px;
+		}
+
+		footer .copyr{
+			font-size: 14px;
+			font-weight: 300;
+			margin-left: 8px;
+			line-height: 40px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<section class="CON_A">
+		<div class="container">
+			<div class="header">
+				<div class="h_c">
+					<a class="logo" href="BOOKI_home.html">B<b>oo</b>ki.</a>
+
+					<div class="navbar">
+						<a href="BOOKI_home.html">홈</a>
+						<a href="BOOKI_thismonth.html">이달의책</a>
+						<a href="BOOKI_recommend.html"><b>추천도서</b></a>
+						<a href="#">동네책방</a>
+						<a href="#">내서재</a>
+					</div>
+
+					<div class="login">
+						<a href="BOOKI_login.html">
+							<img class="change" src="icon/login_i.png">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="title">
+				<p class="title_m">추천도서</p>
+				<p class="title_sub">부키만의 차별화된 AI추천 서비스가 당신의 취향에<br> 딱 맞는 책을 엄선하여 골라드립니다.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="CON_B">
+		<div class="container">
+			<div class="nav_all">
+				<p class="line">｜</p>
+
+				<div class="nav_con">
+					<a class="nav_name" href="BOOKI_home.html">홈</a>
+					<a class="nav_icon" href="BOOKI_home.html">ˇ</a>
+				</div>
+
+				<p class="line">｜</p>
+
+				<div class="nav_con">
+					<a class="nav_name" href="#">추천도서</a>
+					<a class="nav_icon" href="#">ˇ</a>
+				</div>
+
+				<p class="line">｜</p>
+
+				<div class="nav_con">
+					<a class="nav_name" href="BOOKI_recommend.html">소설</a>
+					<a class="nav_icon" href="BOOKI_recommend.html">ˇ</a>
+				</div>
+
+				<p class="line">｜</p>
+
+				<div class="nav_con">
+					<a class="nav_name" href="#">여름의 빌라</a>
+					<a class="nav_icon" href="#">ˇ</a>
+				</div>
+
+				<p class="line">｜</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="CON_C">
+		<div class="container">
+			<div class="item"></div>
+			<div class="item">
+				<div class="top_box">
+					<img class="rotateline" src="icon/green_l.png">
+
+					<p class="book_title" href="#">“여름의 빌라”</p>
+
+					<img class="book_img" src="image/여름의빌라.jpg">
+
+					<p class="book_sub">백수린 소설</p>
+				</div>
+			</div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item">
+				<div class="bottom_box">
+					<p class="book_body">
+						소설집 《폴링 인 폴》 《참담한 빛》, 중편소설 《친애하고 친애하는》 등을 통해 한국문학을 대표하는 작가로 자리매김한 백수린. 대체 불가능한 아름다운 문장과 섬세한 플롯으로 문단과 독자의 신뢰를 한몸에 받아온 백수린이 세번째 소설집 『여름의 빌라』. 현대문학상(「아직 집에는 가지 않을래요」), 문지문학상(「여름의 빌라」), 젊은작가상(「고요한 사건」 「시간의 궤적」) 수상작을 한 권에 만나볼 수 있는 『여름의 빌라』는 오직 백수린만이 가능한 깊고 천천한 시선으로 비로소-기어코 나의 작은 세계를 벗어나는 이들의 눈부신 궤적을 담은 작품집이다.<br><br>
+
+						“머뭇거리면서, 주저하며 나아가는 날들 중 언젠가 내 글에도 아름다움이 깃들기를” 바라던 《폴링 인 폴》의 시절, “사라진 이들을 기억하고, 그들의 흔적을 애틋한 마음으로 주워모으는 사람이 되”기를 바랐던 《참담한 빛》의 세계를 고스란히 품은 채 이번 작품에 당도한 작가는 이제 “성급한 판단을 유보한 채 마음 안에서 벌어지는 사건들을 직시하고 찬찬히 기록”(‘작가의 말’)하기를 소망한다.<br><br>
+
+						2016년 여름부터 2020년 봄까지를 갈무리한 총 여덟 편의 이야기 속엔 작가의 눈앞과 마음 안에서 펼쳐진 풍경을 직시한 파노라마가, 인생의 여름 안에서 마주하는 ‘불가해’라는 축복이, 한 겹의 베일을 걷어내면 더할 나위 없이 우아한 생의 이면이 곳곳에 스며들어 있다.
+					</p>
+				</div>
+			</div>
+			<div class="item"></div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="f_box">
+			<div class="f1_container">
+				<div class="f1">
+					<a class="f1_t" href="#">회사소개</a>
+					<p class="f1_line">｜</p>
+					<a class="f1_t" href="#">제휴문의</a>
+					<p class="f1_line">｜</p>
+					<a class="f1_t" href="#">이용약관</a>
+					<p class="f1_line">｜</p>
+					<a class="f1_t" href="#">개인정보처리방침</a>
+					<p class="f1_line">｜</p>
+					<a class="f1_t" href="#">고객센터</a>
+				</div>
+			</div>
+
+			<div class="f2_container">
+				<div class="f2">
+					<p class="f2_logo">Booki.</p>
+					<p class="copyr">Copyright © ALIVE Corp. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>

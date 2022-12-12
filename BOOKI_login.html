@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOOKI</title>
+	<link rel="shortcut icon" href="icon/logo2.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		@font-face{
+			font-family: 'Queens Compressed Trial';
+			src: url(font/QueensCondensedTrial-Bold.ttf);
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		body {font-family:'Noto Sans KR', 'sans-serif';}
+
+		header .header{
+			background-color: #EDE6D8;
+			width: 100vw;
+			height: 88px;
+			display: flex;
+			justify-content: center;
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+			z-index: 2;
+			position: absolute;
+		}
+
+		header .h_c{
+			width: 100vw;
+			height: 88px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		header .logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 44px;
+			color: #403529;
+			margin-top: 10px;
+		}
+
+		header .logo:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		header .logo b{
+			color: #58B567;
+		}
+
+		header .logo b:hover{
+			color: #403529;
+			transition: 0.15s ease-in;
+		}
+
+		header .navbar{
+			width: 569px;
+			display: flex;
+			font-family: 'Song Myung', serif;
+			font-size: 22px;
+			justify-content: space-around;
+		}
+
+		header .navbar a{
+			color: #403529;
+		}
+
+		header .navbar a:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		header .login img{
+			width: 40px;
+			height: 40px;
+		}
+
+		header .login{
+			width: 40px;
+			height: 40px;
+			background: url(icon/login_g.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			transition: 0.3s;
+			opacity: 1;
+		}
+
+		header .login:hover .change{
+            transition: 0.15s ease-in;
+            opacity: 0;
+		}
+
+		.CON_A{
+			width: 100vw;
+			height: 85vh;
+			background-color: #EDE6D8;
+			z-index: 0;
+			display: flex;
+			align-items: center;
+		}
+
+		.CON_A .container{
+			margin: auto;
+			text-align: center;
+		}
+
+		.CON_A .logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 56px;
+			color: #403529;
+			margin-top: 80px;
+		}
+
+		.CON_A .logo b{
+			color: #58B567;
+			font-weight: 400;
+		}
+
+		.CON_A .text-field1{
+			width: 360px;
+			height: 56px;
+			border: 1.5px solid #403529;
+			border-radius: 50px;
+			background-color: #EDE6D8;
+			font-family: 'Noto Sans KR', 'sans-serif';
+			padding-left: 20px;
+			margin-top: 12px;
+		}
+
+		.CON_A .text-field2{
+			width: 360px;
+			height: 56px;
+			border: 1.5px solid #403529;
+			border-radius: 50px;
+			background-color: #EDE6D8;
+			font-family: 'Noto Sans KR', 'sans-serif';
+			padding-left: 20px;
+			margin-top: 8px;
+		}
+
+		.CON_A .loginform_checkbox{
+			text-align: left;
+			font-family: 'Noto Sans KR', 'sans-serif';
+			font-size: 14px;
+			color: #403529;
+			margin-top: 8px;
+		}
+
+		.CON_A .submit-btn{
+			width: 360px;
+			height: 52px;
+			border-radius: 50px;
+			background-color: #58B567;
+			color: #EDE6D8;
+			border: none;
+			font-size: 16px;
+			margin-top: 16px;
+		}
+
+		.CON_A .submit-btn:hover{
+			background-color: #379246;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .forget{
+			display: flex;
+			justify-content: center;
+			font-size: 14px;
+			margin-top: 16px;
+		}
+
+		.CON_A .forget a{
+			color: #403529;
+		}
+
+		.CON_A .forget a:hover{
+			font-weight: 500;
+			transition: 1s ease-in;
+		}
+		
+		.CON_A .forget p{
+			color: #D4CCC4;
+			margin: 0px 4px 0px 4px;
+		}
+
+		input::placeholder{
+			color: #403529;
+			font-size: 14px;
+		}
+
+		input[type="checkbox"]{
+			width: 14px;
+			height: 14px;
+			border-radius: 50px;
+			border: 1.5px solid #403529;
+			appearance: none;
+			cursor: pointer;
+			transition: background 0.2s;
+		}
+
+		input[type="checkbox"]:checked{
+			width: 14px;
+			height: 14px;
+			background-color: #58B567;
+		}
+
+		footer .container{
+			width: 100vw;
+			height: 15vh;
+			background-color: #EDE6D8;
+			display: flex;
+			border: 1px solid #D4CCC4;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;			
+		}
+
+		footer .f1{
+			display: flex;
+			font-size: 12px;
+		}
+
+		footer .f1 a{
+			color: #403529;
+		}
+
+		footer .f1 a:hover{
+			font-weight: 500;
+			transition: 0.1s ease-in;
+		}
+
+		footer .f1 p{
+			color: #D4CCC4;
+			margin: 0px 4px 0px 4px;
+		} 
+
+		footer .f2{
+			display: flex;
+			margin-top: 8px;
+		}
+
+		footer .f2_logo{
+		 	font-family: 'Queens Compressed Trial', serif;
+		 	font-size: 24px;
+		 	color: #403529;
+		}
+
+		footer .f2_logo b{
+			color: #58B567;
+		}
+
+		footer .copyr{
+			font-size: 12px;
+			color: #403529;
+			margin-top: 6px;
+			margin-left: 4px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<div class="h_c">
+				<a class="logo" href="BOOKI_home.html">B<b>oo</b>ki.</a>
+
+				<div class="navbar">
+					<a href="BOOKI_home.html">홈</a>
+					<a href="BOOKI_thismonth.html">이달의책</a>
+					<a href="BOOKI_recommend.html">추천도서</a>
+					<a href="#">동네책방</a>
+					<a href="#">내서재</a>
+				</div>
+
+				<div class="login">
+					<a href="BOOKI_login.html">
+						<img class="change" src="icon/login_g.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="CON_A">
+		<div class="container">
+			<p class="logo">B<b>oo</b>ki.</p>
+
+			<form>
+				<input type="text" name="email" class="text-field1" placeholder="아이디를 입력하세요."><br>
+
+			    <input type="password" name="password" class="text-field2" placeholder="비밀번호를 입력하세요."><br>
+
+			    <div class="loginform_checkbox">
+			    	<input type="checkbox" class="login-checkbox">
+			    	<span>로그인 상태 유지</span>
+			    </div>
+
+			    <input type="submit" value="로그인" class="submit-btn">
+			</form>
+
+			<div class="forget">
+				<a class="f_text" href="#">아이디 찾기</a>
+				<p class="f_I">｜</p>
+				<a class="f_text" href="#">비밀번호 찾기</a>
+				<p class="f_I">｜</p>
+				<a class="f_text" href="#">회원가입</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="f1">
+				<a class="f1_t" href="#">회사소개</a>
+				<p class="f1_line">｜</p>
+				<a class="f1_t" href="#">제휴문의</a>
+				<p class="f1_line">｜</p>
+				<a class="f1_t" href="#">이용약관</a>
+				<p class="f1_line">｜</p>
+				<a class="f1_t" href="#">개인정보처리방침</a>
+				<p class="f1_line">｜</p>
+				<a class="f1_t" href="#">고객센터</a>
+			</div>
+
+			<div class="f2_container">
+				<div class="f2">
+					<p class="f2_logo">B<b>oo</b>ki.</p>
+					<p class="copyr">Copyright © ALIVE Corp. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
