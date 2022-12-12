@@ -12,6 +12,22 @@
 
 		body {font-family:'Noto Sans KR', 'sans-serif';}
 
+		html{
+			scroll-behavior: smooth;
+		}
+
+		@keyframes mainmove{
+			from{
+				opacity: 0;
+				transform: translateY(40px);
+			}
+
+			to{
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+
 		/*CON_A영역*/
 
 		.CON_A .container{
@@ -110,6 +126,10 @@
 			flex-direction: column;
 			margin: auto;
 			margin-top: 20vh;
+
+			animation-name: mainmove;
+			animation-duration: 1.5s;
+			transition: ease;
 		}
 
 		.CON_A .titleA {
@@ -152,6 +172,11 @@
 			display: flex;
 			flex-direction: column;
 			margin: auto;
+
+			animation-name: mainmove;
+			animation-duration: 1.5s;
+			animation-delay: 1.5s;
+			transition: ease;
 		}
 
 		.CON_B .title_main{
@@ -336,6 +361,11 @@
 			margin-right: 10vw;
 			z-index: 2;
 			flex-direction: column;
+
+			animation-name: mainmove;
+			animation-duration: 1.5s;
+			animation-delay: 2.5s;
+			transition: ease;
 		}
 
 		.CON_C .title_main{
