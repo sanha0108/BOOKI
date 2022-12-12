@@ -1,0 +1,373 @@
+@font-face{
+			font-family: 'Queens Compressed Trial';
+			src: url(font/QueensCondensedTrial-Bold.ttf);
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		body {font-family:'Noto Sans KR', 'sans-serif';}
+
+		/*CON_A영역*/
+
+		.CON_A .container{
+			width: 99vw;
+			height: 624px;
+			background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(image/이달의책.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.CON_A .header{
+			width: 99vw;
+			height: 88px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.CON_A .h_c{
+			width: 100vw;
+			height: 88px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.CON_A .logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 44px;
+			color: #EDE6D8;
+			margin-top: 10px;
+		}
+
+		.CON_A .logo:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .logo b{
+			color: #58B567;
+		}
+
+		.CON_A .logo b:hover{
+			color: #EDE6D8;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar{
+			width: 569px;
+			display: flex;
+			font-family: 'Song Myung', serif;
+			font-size: 22px;
+			justify-content: space-around;
+		}
+
+		.CON_A .navbar a{
+			color: #EDE6D8;
+		}
+
+		.CON_A .navbar a:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar b{
+			color: #58B567;
+			font-weight: 500;
+		}
+
+		.CON_A .login img{
+			width: 40px;
+			height: 40px;
+		}
+
+		.CON_A .login{
+			width: 40px;
+			height: 40px;
+			background: url(icon/login_g.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			transition: 0.3s;
+			opacity: 1;
+		}
+
+		.CON_A .login:hover .change{
+            transition: 0.15s ease-in;
+            opacity: 0;
+		}
+
+		.CON_A .title{
+			width: 80vw;
+			margin: auto;
+			color: #EDE6D8;
+			margin-top: 220px;
+		}
+
+		.CON_A .title_m{
+			font-family: 'Song Myung', serif;
+			font-size: 80px;
+		}
+
+		.CON_A .title_sub{
+			margin-top: 4px;
+			font-size: 18px;
+			letter-spacing: -1px;
+			font-weight: 400;
+		}
+
+		/*CON_B영역*/
+
+		.CON_B{
+			width: 99vw;
+			height: 72px;
+			background-color: #403529;
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+			z-index: 2;
+			position: relative;
+		}
+
+		.CON_B .container{
+			width: 80vw;
+			margin: auto;
+		}
+
+		.CON_B .nav_all{
+			display: flex;
+			line-height: 72px;
+		}
+
+		.CON_B .line{
+			font-size: 26px;
+			color: #EDE6D8;
+			font-weight: 300;
+		}
+
+		.CON_B .nav_con{
+			margin: 0px 16px 0px 16px;
+		}
+
+		.CON_B .nav_name{
+			font-size: 18px;
+			color: #EDE6D8;
+			font-weight: 300;
+			margin-right: 80px;
+		}
+
+		.CON_B .nav_icon{
+			color: #EDE6D8;
+			position: relative;
+			top: 4px;
+			font-weight: 300;
+		}
+
+		.CON_B a:hover{
+			color: #58B567;
+			transition: 0.1s ease-in;
+			font-weight: 500;
+		}
+
+		/*CON_C영역*/
+
+		.CON_C{
+			background-color: #EDE6D8;
+			width: 99vw;
+			height: 2800px;
+		}
+
+		.CON_C .container_all{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.CON_C .container1{
+			width: 864px;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			text-align: center;
+		}
+
+		.CON_C .rotateline{
+			width: 4px;
+			height: 60px;
+			transform: rotateZ(35deg);
+			margin: auto;
+			margin-top: 120px;
+		}
+
+		.CON_C .booktitle{
+			font-family: 'Song Myung', serif;
+			font-size: 40px;
+			color: #403529;
+			margin-top: 12px;
+		}
+
+		.CON_C .booktitle:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_C .booksubt{
+			font-size: 18px;
+			color: #403529;
+			margin-top: 4px;
+		}
+
+		.CON_C .book_box{
+			display: flex;
+			margin-top: 28px;
+		}
+
+		.CON_C .book_image{
+			width: 300px;
+			height: 460px;
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.CON_C .book_image:hover{
+			transform: scale(1.03);
+			transition: 0.15s ease-in;
+		}
+
+		.CON_C .bodyandkey{
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+		}
+
+		.CON_C .book_body{
+			width: 520px;
+			text-align: left;
+			font-size: 18px;
+			color: #403529;
+			letter-spacing: -.8px;
+			line-height: 28px;
+		}
+
+		.CON_C .book_body b{
+			color: #58B567;
+			font-weight: 700;
+		}
+
+		.CON_C .keyword_con{
+			text-align: left;
+			margin-top: 20px;
+			margin-bottom: 16px;
+		}
+
+		.CON_C .keyword{
+			color: white;
+			width: 100%;
+			background-color: #403529;
+			padding: 4px 16px;
+			border-radius: 30px;
+			font-size: 16px;
+			margin-right: 4px;
+		}
+
+		.CON_C .keyword:hover{
+			color: #58B567;
+			transition: 0.1s ease-in;
+		}
+
+		.CON_C .line_right{
+			width: 75vw;
+			height: 1.5px;
+			background-color: #403529;
+			display: flex;
+			margin-left: auto;
+			margin-top: 120px;
+		}
+
+		.CON_C .container2{
+			width: 864px;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			text-align: center;
+		}
+
+		.CON_C .line_left{
+			width: 75vw;
+			height: 1px;
+			background-color: #403529;
+			display: flex;
+			margin-right: auto;
+			margin-top: 120px;
+		}
+
+		.CON_C .container3{
+			width: 864px;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			text-align: center;
+		}
+
+		footer .f_box{
+			width: 99vw;
+			display: flex;
+			flex-direction: column;
+		}
+
+		footer .f1_container{
+			width: 99vw;
+			height: 56px;
+			background-color: #AC977F;
+			line-height: 56px;
+		}
+
+		footer .f1{
+			font-size: 15px;
+			width: 480px;
+			display: flex;
+			justify-content: space-around;
+			margin: auto;
+		}
+
+		footer .f1 a{
+			color: #403529;
+		}
+
+		footer .f1 a:hover{
+			font-weight: 500;
+			transition: 0.3s ease-in;
+		}
+
+		footer .f1 p{
+			color: #EDE6D8;
+		}
+
+		footer .f2_container{
+			width: 99vw;
+			height: 132px;
+			background-color: #403529;
+		}
+
+		footer .f2{
+			width: 410px;
+			display: flex;
+			color: #EDE6D8;
+			margin: auto;
+			position: relative;
+			top: 68px;
+		}
+
+		footer .f2_logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 32px;
+		}
+
+		footer .copyr{
+			font-size: 14px;
+			font-weight: 300;
+			margin-left: 8px;
+			line-height: 40px;
+		}

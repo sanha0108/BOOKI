@@ -1,0 +1,437 @@
+@font-face{
+			font-family: 'Queens Compressed Trial';
+			src: url(font/QueensCondensedTrial-Bold.ttf);
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		body {font-family:'Noto Sans KR', 'sans-serif';}
+
+		.CON_A .container{
+			width: 99vw;
+			height: 624px;
+			background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(image/추천도서.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.CON_A .header{
+			width: 99vw;
+			height: 88px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.CON_A .h_c{
+			width: 100vw;
+			height: 88px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.CON_A .logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 44px;
+			color: #EDE6D8;
+			margin-top: 10px;
+		}
+
+		.CON_A .logo:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .logo b{
+			color: #58B567;
+		}
+
+		.CON_A .logo b:hover{
+			color: #EDE6D8;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar{
+			width: 569px;
+			display: flex;
+			font-family: 'Song Myung', serif;
+			font-size: 22px;
+			justify-content: space-around;
+		}
+
+		.CON_A .navbar a{
+			color: #EDE6D8;
+		}
+
+		.CON_A .navbar a:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar b{
+			color: #58B567;
+			font-weight: 500;
+		}
+
+		.CON_A .login img{
+			width: 40px;
+			height: 40px;
+		}
+
+		.CON_A .login{
+			width: 40px;
+			height: 40px;
+			background: url(icon/login_g.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			transition: 0.3s;
+			opacity: 1;
+		}
+
+		.CON_A .login:hover .change{
+            transition: 0.15s ease-in;
+            opacity: 0;
+		}
+
+		.CON_A .title{
+			width: 80vw;
+			margin: auto;
+			color: #EDE6D8;
+			margin-top: 220px;
+		}
+
+		.CON_A .title_m{
+			font-family: 'Song Myung', serif;
+			font-size: 80px;
+		}
+
+		.CON_A .title_sub{
+			margin-top: 4px;
+			font-size: 18px;
+			letter-spacing: -1px;
+			font-weight: 400;
+		}
+
+		/*CON_B영역*/
+
+		.CON_B{
+			width: 99vw;
+			height: 72px;
+			background-color: #403529;
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+			z-index: 2;
+			position: relative;
+		}
+
+		.CON_B .container{
+			width: 80vw;
+			margin: auto;
+		}
+
+		.CON_B .nav_all{
+			display: flex;
+			line-height: 72px;
+		}
+
+		.CON_B .line{
+			font-size: 26px;
+			color: #EDE6D8;
+			font-weight: 300;
+		}
+
+		.CON_B .nav_con{
+			margin: 0px 16px 0px 16px;
+		}
+
+		.CON_B .nav_name{
+			font-size: 18px;
+			color: #EDE6D8;
+			font-weight: 300;
+			margin-right: 80px;
+		}
+
+		.CON_B .nav_icon{
+			color: #EDE6D8;
+			position: relative;
+			top: 4px;
+			font-weight: 300;
+		}
+
+		.CON_B a:hover{
+			color: #58B567;
+			transition: 0.1s ease-in;
+			font-weight: 500;
+		}
+
+/*		CON_C영역*/
+
+		.CON_C{
+			width: 99vw;
+			height: 260px;
+			background-color: #444C4E;
+			display: flex;
+			justify-content: center;
+			overflow: hidden;
+		}
+
+		.CON_C .container{
+			display: flex;
+			justify-content: center;
+		}
+
+		.CON_C .banner{
+			width: 80vw;
+			height: 320px;
+			background-image: url(image/배너1.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.CON_C .banner:hover{
+			transition: 0.2s ease-in;
+			transform: scale(1.02);
+		}
+
+		/*CON_D영역*/
+
+		.CON_D{
+			width: 99vw;
+			height: 68px;
+			background-color: #AC977F;
+			position: relative;
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+			z-index: 2;
+			position: relative;
+
+		}
+
+		.CON_D .container{
+			width: 80vw;
+			margin: auto;
+		}
+
+		.CON_D .nav_box{
+			display: flex;
+		}
+
+		.CON_D .nav_box a{
+			font-size: 20px;
+			line-height: 68px;
+			color: #EDE6D8;
+		}
+
+		.CON_D .nav_m{
+			width: 13.5vw;
+			text-align: center;
+		}
+
+		.CON_D .nav_m a:hover{
+			color: #403529;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_D .nav_m_p{
+			width: 13.5vw;
+			background-color: #403529;
+			text-align: center;
+		}
+
+		.CON_D .nav_m_p a:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+/*		CON_E영역*/
+
+		/*.CON_E{
+			width: 99vw;
+			height: 800px;
+			background-color: #EDE6D8;
+		}*/
+
+		.CON_E .container{
+			width: 80vw;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.CON_E .rotateline{
+			width: 4px;
+			height: 60px;
+			transform: rotateZ(35deg);
+			margin: auto;
+			margin-top: 120px;
+		}
+
+		.CON_E .category_t{
+			font-family: 'Song Myung', serif;
+			font-size: 44px;
+			color: #403529;
+			margin-top: 12px;
+			margin-bottom: 52px;
+		}
+
+		.CON_E .book_container1{
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 120px;
+
+		}
+
+		.CON_E .book_img{
+			width: 13.2vw;
+			height: 20vw;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.CON_E .book_img:hover{
+			transition: 0.15s ease-in;
+			transform: scale(1.02);
+		}
+
+		.CON_E .book_title{
+			text-align: left;
+			font-size: 19px;
+			color: #403529;
+			font-weight: 500;
+			margin-top: 4px;
+		}
+
+		.CON_E .book_title:hover{
+			transition: 0.15s ease-in;
+			color: #58B567;
+		}
+
+		.CON_E .book_writer{
+			text-align: left;
+			font-size: 16px;
+			color: #403529;
+			font-weight: 500;
+			margin-top: 4px;
+		}
+
+		.CON_E .book_writer:hover{
+			transition: 0.15s ease-in;
+			color: #58B567;
+		}
+
+		.CON_E .book_container2{
+			display: flex;
+			justify-content: space-around;
+			height: 64vh;
+			align-items: center;
+		}
+
+		.CON_E .book_container2 .book_title{
+			color: #EDE6D8;
+		}
+
+		.CON_E .book_container2 .book_title:hover{
+			transition: 0.15s ease-in;
+			color: #58B567;
+		}
+
+		.CON_E .book_container2 .book_writer{
+			color: #EDE6D8;
+		}
+
+		.CON_E .book_container2 .book_writer:hover{
+			transition: 0.15s ease-in;
+			color: #58B567;
+		}
+
+		.CON_E .book1_back{
+			width: 99vw;
+			height: 90vh;
+			background-color: #EDE6D8;
+		}
+
+		.CON_E .book2_back{
+			width: 99vw;
+			height: 64vh;
+			background-color: #403529;
+		}
+
+		.CON_E .book3_back{
+			width: 99vw;
+			height: 80vh;
+			background-color: #EDE6D8;
+		}
+
+		.CON_E .book_container3{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 8.2vh;
+		}
+
+		footer .f_box{
+			width: 99vw;
+			display: flex;
+			flex-direction: column;
+		}
+
+		footer .f1_container{
+			width: 99vw;
+			height: 56px;
+			background-color: #AC977F;
+			line-height: 56px;
+		}
+
+		footer .f1{
+			font-size: 15px;
+			width: 480px;
+			display: flex;
+			justify-content: space-around;
+			margin: auto;
+		}
+
+		footer .f1 a{
+			color: #403529;
+		}
+
+		footer .f1 a:hover{
+			font-weight: 500;
+			transition: 0.3s ease-in;
+		}
+
+		footer .f1 p{
+			color: #EDE6D8;
+		}
+
+		footer .f2_container{
+			width: 99vw;
+			height: 132px;
+			background-color: #403529;
+		}
+
+		footer .f2{
+			width: 410px;
+			display: flex;
+			color: #EDE6D8;
+			margin: auto;
+			position: relative;
+			top: 68px;
+		}
+
+		footer .f2_logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 32px;
+		}
+
+		footer .copyr{
+			font-size: 14px;
+			font-weight: 300;
+			margin-left: 8px;
+			line-height: 40px;
+		}
