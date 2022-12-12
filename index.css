@@ -1,0 +1,443 @@
+@font-face{
+			font-family: 'Queens Compressed Trial';
+			src: url(font/QueensCondensedTrial-Bold.ttf);
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		body {font-family:'Noto Sans KR', 'sans-serif';}
+
+		/*CON_A영역*/
+
+		.CON_A .container{
+			width: 99vw;
+			height: 100vh;
+			background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.9)), url(image/메인.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.CON_A .header{
+			width: 99vw;
+			display: flex;
+			justify-content: center;
+		}
+
+		.CON_A .h_c{
+			width: 100vw;
+			height: 88px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.CON_A .logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 44px;
+			color: #EDE6D8;
+			margin-top: 10px;
+		}
+
+		.CON_A .logo:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .logo b{
+			color: #58B567;
+		}
+
+		.CON_A .logo b:hover{
+			color: #EDE6D8;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar{
+			width: 569px;
+			display: flex;
+			font-family: 'Song Myung', serif;
+			font-size: 22px;
+			justify-content: space-around;
+/*			position: fixed;*/
+		}
+
+		.CON_A .navbar a{
+			color: #EDE6D8;
+		}
+
+		.CON_A .navbar a:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_A .navbar b{
+			color: #58B567;
+			font-weight: 400;
+		}
+
+
+		.CON_A .login img{
+			width: 40px;
+			height: 40px;
+		}
+
+		.CON_A .login{
+			width: 40px;
+			height: 40px;
+			background: url(icon/login_g.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			transition: 0.3s;
+			opacity: 1;
+		}
+
+		.CON_A .login:hover .change{
+            transition: 0.15s ease-in;
+            opacity: 0;
+		}
+
+		.CON_A .title{
+			width: 80vw;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			margin-top: 20vh;
+		}
+
+		.CON_A .titleA {
+			font-family: 'Song Myung', serif;
+			font-size: 58px;
+			color: #EDE6D8;
+			text-align: right;
+			letter-spacing: -1px;
+			line-height: 76px;	
+		}
+
+		.CON_A .titleB{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 114px;
+			color: #EDE6D8;
+			text-align: right;
+			margin-top: 4vh;
+		}
+
+		.CON_A .titleB b{
+			color: #58B567;
+		}
+
+		/*CON_B영역*/
+
+		.CON_B .container{
+			width: 99vw;
+			height: 100vh;
+			background-color: #EDE6D8;
+			display: flex;
+		}
+
+		.CON_B .box{
+			margin: auto;
+			display: flex;
+			width: 80vw;
+		}
+
+		.CON_B .title{
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+		}
+
+		.CON_B .title_main{
+			font-family: 'Song Myung', serif;
+			font-size: 58px;
+			color: #403529;
+			letter-spacing: -1px;
+			line-height: 76px;
+		}
+
+		.CON_B .title_main b{
+			color: #58B567;
+			letter-spacing: -1px;
+			font-weight: 400;
+		}
+
+		.CON_B .title_sub{
+			font-size: 18px;
+			color: #403529;
+			line-height: 26px;
+			margin-top: 10px;
+		}
+
+		.CON_B .button{
+			width: 200px;
+			height: 52px;
+			background-color: #58B567;
+			border-radius: 100px;
+			margin-top: 24px;
+			font-family: 'Song Myung', serif;
+			font-size: 26px;
+			color: white;
+			text-align: center;
+			line-height: 52px;
+		}
+
+		.CON_B .button:hover{
+			background-color: #379246;
+			transition: 0.15s ease-in;
+		}
+
+		.CON_B .book{
+			display: flex;
+			width: 48vw;
+			justify-content: space-around;
+		}
+
+		.CON_B .book2 img{
+			border-radius: 0px 0px 200px 200px;
+		}
+
+		.CON_B .conb_im{
+			width: 228px;
+			height: 352px;
+			border-radius: 200px 200px 0px 0px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.CON_B .conb_im:hover{
+			transition: 0.15s ease-in;
+			transform: scale(1.03);
+		}
+
+		.CON_B .conb_booktitle{
+			font-family: 'Song Myung', serif;
+			font-size: 22px;
+			color: #403529;
+			text-align: center;
+			margin-top: 12px;
+		}
+
+		.CON_B .conb_booktitle:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+			transform: scale(1.03);
+		}
+
+		.CON_B .conb_writer{
+			font-family: 'Song Myung', serif;
+			font-size: 18px;
+			color: #403529;
+			text-align: center;
+			margin-top: 4px;
+		}
+
+		.CON_B .conb_writer:hover{
+			color: #58B567;
+			transition: 0.15s ease-in;
+			transform: scale(1.03);
+		}
+
+		.CON_B .book2 .conb_writer{
+			margin-bottom: 12px;
+		}
+
+		/*CON_C영역*/
+
+		.CON_C .container{
+			width: 99vw;
+			height: 100vh;
+			background-color: #403529;
+			display: flex;
+			overflow: hidden;
+		}
+
+		.CON_C .book{
+			height: 1541px;
+			display: flex;
+			align-items: center;
+			position: relative;
+			bottom: 400px;
+			right: 80px;
+			transform: rotateZ(14deg);
+			z-index: 1;
+		}
+
+		.CON_C .layout1{
+			display: flex;
+			flex-direction: column;
+			margin-right: 52px;
+			padding-top: 200px;
+		}
+		.CON_C .layout1 div:last-child .conc_im{
+			border-radius: 0px 0px 200px 200px;		
+		}
+
+		.CON_C .layout2{
+			display: flex;
+			flex-direction: column;
+			margin-right: 52px;
+			padding-top: 100px;
+		}
+
+		.CON_C .layout3{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.CON_C .conc_im{
+			width: 260px;
+			height: 344px;
+			border-radius: 200px 200px 0px 0px;
+		}
+
+		.CON_C .conc_im:hover{
+			transition: 0.15s ease-in;
+			transform: translateX(10px);
+		}
+
+		/*layout당 마지막 이미지들 border-radius값 반전시키기*/
+
+		.CON_C .conc_booktitle{
+			font-family: 'Song Myung', serif;
+			font-size: 20px;
+			color: #EDE6D8;
+			margin-top: 8px;
+		}
+
+		.CON_C .conc_booktitle:hover{
+			transition: 0.15s ease-in;
+			transform: translateX(10px);
+			color: #58B567;
+		}
+
+		.CON_C .conc_writer{
+			font-family: 'Song Myung', serif;
+			font-size: 16px;
+			color: #AC977F;
+			margin-top: 4px;
+			margin-bottom: 28px;
+		}
+
+		.CON_C .conc_writer:hover{
+			transition: 0.15s ease-in;
+			transform: translateX(10px);
+			color: #58B567;
+		}
+
+		.CON_C .title{
+			display: flex;
+			margin: auto;
+			margin-right: 10vw;
+			z-index: 2;
+			flex-direction: column;
+		}
+
+		.CON_C .title_main{
+			font-family: 'Song Myung', serif;
+			font-size: 58px;
+			color: #EDE6D8;
+			letter-spacing: -1px;
+			line-height: 76px;
+			text-align: right;
+			z-index: 2;
+		}
+
+		.CON_C .title_main b{
+			color: #58B567;
+			letter-spacing: -1px;
+			font-weight: 400;
+		}
+
+		.CON_C .title_sub{
+			font-size: 18px;
+			color: #EDE6D8;
+			line-height: 26px;
+			margin-top: 10px;
+			text-align: right;
+		}
+
+		.CON_C .button{
+			width: 200px;
+			height: 52px;
+			background-color: #58B567;
+			border-radius: 100px;
+			margin-top: 24px;
+			font-family: 'Song Myung', serif;
+			font-size: 26px;
+			color: white;
+			text-align: center;
+			line-height: 52px;
+			margin-left: auto;
+		}
+
+		.CON_C .button:hover{
+			background-color: #379246;
+			transition: 0.15s ease-in;
+		}
+
+		footer .f_box{
+			width: 99vw;
+			display: flex;
+			flex-direction: column;
+		}
+
+		footer .f1_container{
+			width: 99vw;
+			height: 56px;
+			background-color: #AC977F;
+			line-height: 56px;
+		}
+
+		footer .f1{
+			font-size: 15px;
+			width: 480px;
+			display: flex;
+			justify-content: space-around;
+			margin: auto;
+		}
+
+		footer .f1 a{
+			color: #403529;
+		}
+
+		footer .f1 a:hover{
+			font-weight: 500;
+			transition: 0.3s ease-in;
+		}
+
+		footer .f1 p{
+			color: #EDE6D8;
+		}
+
+		footer .f2_container{
+			width: 99vw;
+			height: 132px;
+			background-color: #403529;
+		}
+
+		footer .f2{
+			width: 410px;
+			display: flex;
+			color: #EDE6D8;
+			margin: auto;
+			position: relative;
+			top: 68px;
+		}
+
+		footer .f2_logo{
+			font-family: 'Queens Compressed Trial', serif;
+			font-size: 32px;
+		}
+
+		footer .copyr{
+			font-size: 14px;
+			font-weight: 300;
+			margin-left: 8px;
+			line-height: 40px;
+		}
